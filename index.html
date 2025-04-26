@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocuCore - PDF, Word & Image Processing Tools | Document Management Solutions</title>
+    <meta name="description" content="DocuCore - The heart of all your document operations. Convert, edit, merge, split, compress, and protect PDFs, Word documents, and images with our powerful online tools.">
+    <meta name="keywords" content="PDF tools, Word converter, document processing, PDF to Word, Word to PDF, merge PDF, split PDF, compress PDF, protect PDF, edit PDF, OCR PDF, document management">
+    <meta name="author" content="DocuCore">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="DocuCore - Professional Document Processing Tools">
+    <meta property="og:description" content="Transform your documents with DocuCore's powerful suite of tools. Fast, secure, and easy to use document processing solutions.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <i class="fas fa-file-pdf"></i>
+            </div>
+            <div class="logo-text">DocuCore</div>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <div class="nav-dropdown">
+                <a href="#tools" class="dropdown-trigger">
+                    Tools
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="nav-dropdown-menu">
+                    <div class="dropdown-item" data-tool="pdf-to-word">
+                        <i class="fas fa-file-word"></i>
+                        <span>PDF to Word</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="pdf-to-excel">
+                        <i class="fas fa-file-excel"></i>
+                        <span>PDF to Excel</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="pdf-to-powerpoint">
+                        <i class="fas fa-file-powerpoint"></i>
+                        <span>PDF to PowerPoint</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="pdf-to-jpg">
+                        <i class="fas fa-file-image"></i>
+                        <span>PDF to JPG</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="word-to-pdf">
+                        <i class="fas fa-file-word"></i>
+                        <span>Word to PDF</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="merge">
+                        <i class="fas fa-object-group"></i>
+                        <span>Merge PDFs</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="split">
+                        <i class="fas fa-cut"></i>
+                        <span>Split PDF</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="compress">
+                        <i class="fas fa-compress-alt"></i>
+                        <span>Compress PDF</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="ocr">
+                        <i class="fas fa-font"></i>
+                        <span>OCR PDF</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="protect">
+                        <i class="fas fa-lock"></i>
+                        <span>Protect PDF</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="convert">
+                        <i class="fas fa-file-import"></i>
+                        <span>Convert to PDF</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="jpg-to-pdf">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>JPG to PDF</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="html-to-pdf">
+                        <i class="fas fa-file-code"></i>
+                        <span>HTML to PDF</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="edit-pdf">
+                        <i class="fas fa-edit"></i>
+                        <span>Edit PDF</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="sign-pdf">
+                        <i class="fas fa-signature"></i>
+                        <span>Sign PDF</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="rotate-pdf">
+                        <i class="fas fa-sync"></i>
+                        <span>Rotate PDF</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="unlock-pdf">
+                        <i class="fas fa-unlock"></i>
+                        <span>Unlock PDF</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="repair-pdf">
+                        <i class="fas fa-wrench"></i>
+                        <span>Repair PDF</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="compare-pdf">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Compare PDFs</span>
+                    </div>
+                    <div class="dropdown-item" data-tool="compare-word">
+                        <i class="fas fa-file-word"></i>
+                        <span>Compare Word</span>
+                    </div>
+                </div>
+            </div>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Professional Document Processing Tools</h1>
+            <p>The heart of all your document operations. Transform, organize, and conquer PDFs, Word documents, and images with our powerful online tools. Fast, secure, and easy to use document management solutions.</p>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+        <h2>Professional Document Processing Solutions</h2>
+        <p class="tools-description">Access our comprehensive suite of document processing tools designed for professionals and businesses. Convert, edit, merge, split, compress, and protect your documents with ease.</p>
+        <div class="tools-grid">
+            <div class="tool-card" data-tool="pdf-to-word">
+                <i class="fas fa-file-word"></i>
+                <h3>PDF to Word</h3>
+                <p>Convert PDF files to Microsoft Word documents</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="pdf-to-excel">
+                <i class="fas fa-file-excel"></i>
+                <h3>PDF to Excel</h3>
+                <p>Convert PDF tables to Microsoft Excel spreadsheets</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="pdf-to-powerpoint">
+                <i class="fas fa-file-powerpoint"></i>
+                <h3>PDF to .ppt</h3>
+                <p>Convert PDF files to PowerPoint presentations</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="pdf-to-jpg">
+                <i class="fas fa-file-image"></i>
+                <h3>PDF to JPG</h3>
+                <p>Convert PDF pages to JPG images</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="word-to-pdf">
+                <i class="fas fa-file-word"></i>
+                <h3>Word to PDF</h3>
+                <p>Convert Microsoft Word documents to PDF</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="merge">
+                <i class="fas fa-object-group"></i>
+                <h3>Merge PDFs</h3>
+                <p>Combine multiple PDF files into a single document</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="split">
+                <i class="fas fa-cut"></i>
+                <h3>Split PDF</h3>
+                <p>Split a PDF into multiple documents</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="compress">
+                <i class="fas fa-compress-alt"></i>
+                <h3>Compress PDF</h3>
+                <p>Reduce PDF file size while maintaining quality</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="ocr">
+                <i class="fas fa-font"></i>
+                <h3>OCR PDF</h3>
+                <p>Extract text from scanned PDF documents</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="protect">
+                <i class="fas fa-lock"></i>
+                <h3>Protect PDF</h3>
+                <p>Add password protection to your PDF</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="convert">
+                <i class="fas fa-file-import"></i>
+                <h3>Convert to PDF</h3>
+                <p>Convert images and documents to PDF</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            
+            <div class="tool-card" data-tool="jpg-to-pdf">
+                <i class="fas fa-file-pdf"></i>
+                <h3>JPG to PDF</h3>
+                <p>Convert JPG images to PDF documents</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="html-to-pdf">
+                <i class="fas fa-file-code"></i>
+                <h3>HTML to PDF</h3>
+                <p>Convert HTML files or web pages to PDF documents</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="edit-pdf">
+                <i class="fas fa-edit"></i>
+                <h3>Edit PDF</h3>
+                <p>Edit text, images, and other elements in your PDF</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="sign-pdf">
+                <i class="fas fa-signature"></i>
+                <h3>Sign PDF</h3>
+                <p>Add digital signatures to your PDF documents</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="rotate-pdf">
+                <i class="fas fa-sync"></i>
+                <h3>Rotate PDF</h3>
+                <p>Rotate PDF pages in any direction</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="unlock-pdf">
+                <i class="fas fa-unlock"></i>
+                <h3>Unlock PDF</h3>
+                <p>Remove password protection from PDF files</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="repair-pdf">
+                <i class="fas fa-wrench"></i>
+                <h3>Repair PDF</h3>
+                <p>Fix corrupted or damaged PDF files</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="compare-pdf">
+                <i class="fas fa-file-pdf"></i>
+                <h3>Compare PDFs</h3>
+                <p>Compare two PDF files and highlight differences</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+            <div class="tool-card" data-tool="compare-word">
+                <i class="fas fa-file-word"></i>
+                <h3>Compare Word</h3>
+                <p>Compare two Word documents and highlight changes</p>
+                <button class="btn select-tool">Select</button>
+            </div>
+        </div>
+
+        <!-- File Upload Modal -->
+        <div id="file-upload-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="selected-tool-title"></h3>
+                    <button class="close-modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="html-url-input" class="url-input hidden">
+                        <input type="url" id="html-url" placeholder="Enter website URL">
+                        <p class="or-text">or</p>
+                    </div>
+                    <div id="password-input" class="password-input hidden">
+                        <input type="password" id="pdf-password" placeholder="Enter PDF password">
+                    </div>
+                    <div id="rotation-options" class="rotation-options hidden">
+                        <div class="rotation-buttons">
+                            <button class="rotate-btn" data-rotation="90">
+                                <i class="fas fa-redo"></i> 90°
+                            </button>
+                            <button class="rotate-btn" data-rotation="180">
+                                <i class="fas fa-sync"></i> 180°
+                            </button>
+                            <button class="rotate-btn" data-rotation="270">
+                                <i class="fas fa-undo"></i> 270°
+                            </button>
+                        </div>
+                    </div>
+                    <div id="compare-inputs" class="compare-inputs hidden">
+                        <div class="compare-file">
+                            <h4>First File</h4>
+                            <div class="upload-area" id="drop-area-1">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Drag and drop first file here, or click to select</p>
+                                <input type="file" id="file-input-1">
+                            </div>
+                        </div>
+                        <div class="compare-file">
+                            <h4>Second File</h4>
+                            <div class="upload-area" id="drop-area-2">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Drag and drop second file here, or click to select</p>
+                                <input type="file" id="file-input-2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-area" id="drop-area">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Drag and drop files here, or click to select files</p>
+                        <input type="file" id="file-input" multiple>
+                    </div>
+                    <div id="file-list" class="file-list"></div>
+                </div>
+                <div class="modal-footer">
+                    <button id="process-btn" class="btn primary">Process Files</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>DocuCore</span>
+                </div>
+                <p>The heart of all your document operations. Professional document processing solutions for businesses and individuals. Fast, secure, and easy to use.</p>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated with Latest Features</h4>
+                    <div class="newsletter-input">
+                        <input type="email" placeholder="Enter your email">
+                        <button class="btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Popular Tools</h4>
+                <div class="footer-links">
+                    <a href="#"><i class="fas fa-file-word"></i> PDF to Word</a>
+                    <a href="#"><i class="fas fa-file-excel"></i> PDF to Excel</a>
+                    <a href="#"><i class="fas fa-object-group"></i> Merge PDFs</a>
+                    <a href="#"><i class="fas fa-compress-alt"></i> Compress PDF</a>
+                    <a href="#"><i class="fas fa-lock"></i> Protect PDF</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <div class="footer-links">
+                    <a href="#"><i class="fas fa-book"></i> Documentation</a>
+                    <a href="#"><i class="fas fa-question-circle"></i> Help Center</a>
+                    <a href="#"><i class="fas fa-blog"></i> Blog</a>
+                    <a href="#"><i class="fas fa-graduation-cap"></i> Tutorials</a>
+                    <a href="#"><i class="fas fa-comments"></i> Community</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-envelope"></i> support@docucore.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+            <p>&copy; <span id="current-year"></span> DocuCore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
